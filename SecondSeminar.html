@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let a = +prompt('enter a number: ');
+    if (a > 999) {
+        a = a % 1000;
+    }
+    let cotnya = ~~(a / 100);
+    let desyatki = ~~((a % 100) / 10);
+    let edinitci = a % 10;
+    console.log(`a= ${cotnya} сотен ${desyatki} десятков ${edinitci} единиц`);
+</script>
+<script>
+    let dayNumber = +prompt();
+    if (dayNumber >= 1 & dayNumber < 32) {
+        decade = ~~(dayNumber / 10);
+        if (decade == 0) { decade = 1; }
+        console.log(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
+    } else {
+        console.log('Incorrect number');
+    }
+</script>
+<script>
+
+    let test = confirm("У вас много денег?");
+
+    (test == true) ? console.log('Скоро будем у вас') : console.log('До свидания.');
+
+</script>
+<script>
+    positive = +prompt('Введите положительное число');
+    negative = +prompt('Введите отрицательно число');
+    (positive > 0 & negative < 0) ? console.log('Все значения верные.') : console.log('Одно или более значений некорректно.');
+</script>
+
+<body>
+
+</body>
+
+</html>
