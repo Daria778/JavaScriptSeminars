@@ -5,25 +5,25 @@ const array = [];
 for (let i = 0; i < 5; i++) {
     array.push(Random(0, 9));
 }
-const Sum = (array) => {
-    let sum = 0;
+const sum = (array) => {
+    let jum = 0;
     for (let i = 0; i < array.length; i++) {
-        sum += array[i];
+        jum += array[i];
     }
-    return sum;
+    return jum;
 }
-const Min = (array) => {
-    let min = array[0];
+const min = (array) => {
+    let kin = array[0];
     for (let i = 0; i < array.length; i++) {
-        if (array[i] < array[0]) min = array[i];
+        if (array[i] < array[0]) kin = array[i];
     }
-    return min;
+    return kin;
 }
-const NewArray = (array) => {
+const newArray = (array) => {
     const newarr = [];
     for (let i = 0; i < array.length; i++) {
         if (array[i] === 3) newarr.push(array[i]);
     }
     return newarr;
 }
-console.log(array, Min(array), Sum(array), NewArray(array));
+console.log(array, min(array), sum(array), newArray(array));
