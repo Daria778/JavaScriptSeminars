@@ -49,10 +49,8 @@
         //"dropdownMenuButton" используя dataset.
         const Itemf = document.querySelector('[aria-labelledby="dropdownMenuButton"]');
         Itemf.dataset.dd = 3;
+        // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
+        const toggleItm = document.querySelector('.dropdown-toggle');
+        toggleItm.removeAttribute('type');
     </script>
 </body>
-
-// 6. Добавьте атрибут data-dd со значением 3 элементу у которого существует атрибут "aria-labelledby" равный
-"dropdownMenuButton" используя dataset.
-// []()
-// 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
