@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/ContinueJavaScript/Seminar5/data2.js"></script>
+    <script src="/ContinueJavaScript/Seminar5/script.js"></script>
+</head>
+
+<body>
+    <div class="np">
+        <!--
+            lflflf
+        -->
+    </div>
+    <script>
+        const divEl = document.querySelector('.np');
+        cat.forEach(el => {
+            const name = document.createElement('p');
+            name.classList.add(el.class);
+            name.textContent = el.CatName;
+            divEl.appendChild(name);
+            const imagecst = document.createElement('img');
+            imagecst.classList.add(el.class);
+            imagecst.setAttribute('src', el.CatPicture);
+            divEl.appendChild(imagecst);
+
+        });
+    </script>
+</body>
+
+</html>
