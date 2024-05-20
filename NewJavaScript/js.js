@@ -11,13 +11,14 @@
 const arr = [1, 5, 7, 9, 0];
 console.log(Math.min(...arr));
 
-const CreateCounter = (count) => {
-    const decr = count - 1;
-    const incr = count + 1;
-    return { 'count1': decr, 'count2': incr };
-
+const CreateCounter = () => {
+    let count = 0;
+    return {
+        increment: count + 1,
+        decrement: count - 1
+    }
 }
-console.log(CreateCounter(4));
+console.log(CreateCounter());
 
 const findElementByClass = (root, Elclass) => {
     if (root.classList.contains(Elclass)) return root;
